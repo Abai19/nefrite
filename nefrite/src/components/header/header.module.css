@@ -1,0 +1,17 @@
+.container{
+    width: 90%;
+    margin:0 auto;
+    
+}
+.container_content{
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    border-bottom: 1px solid #dedede;
+}
+.btn{
+    border: none;
+    background: #00a86b;
+    color:white;
+    padding:12px
+}
