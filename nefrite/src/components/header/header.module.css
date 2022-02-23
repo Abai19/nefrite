@@ -1,7 +1,7 @@
 .container{
     width: 90%;
     margin:0 auto;
-    
+    font-family: 'Nunito', sans-serif;
 }
 .container_content{
     display: flex;
@@ -9,9 +9,74 @@
     align-items: center;
     border-bottom: 1px solid #dedede;
 }
+img{
+    width: 25px;
+    margin-right:10px;
+}
+.searchIconFa{
+    width: 25px;
+    color: #00a86b;
+}
+.shoppingIconFa{
+    margin-right: 10px;
+    color:white
+}
+.searchInput {
+    outline: none; /* Убираем свечение в Chrome и Safari */
+    vertical-align: middle; /* Выравнивание по середине */
+    height: 28px;
+    width: 500px;
+   }
+.searchIcon {
+    position: absolute;
+    border: none; /* Убираем рамку */
+    background: none;
+    right: 86px;
+    top: 9px;
+    /* background: url('../../img/search.png') no-repeat 50% 50%; Параметры фона */
+   }
 .btn{
     border: none;
     background: #00a86b;
     color:white;
-    padding:12px
+    padding:12px;
+    font-size: 16px;
+    font-family: 'Nunito', sans-serif;
+}
+.shoppingCartBtn{
+    color:white;
+    margin-left: 20px;
+    border: none;
+    background-color: #00a86b;
+    padding:12px;
+    font-size: 16px;
+    font-family: 'Nunito', sans-serif;
+}
+.logoBlock{
+    width: 20%;
+}
+.searchBlock{
+    height: 30px;
+    position: relative;
+}
+.containerSearch{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 40px;
+    align-items: center;
+}
+.menuBlock{
+    margin-top: 30px;
+    min-height: 50px;
+    position: relative;
+    display: block;
+    border-top: 1px solid #dedede;
+    border-bottom: 1px solid #dedede;
+    box-shadow: 0 17px 11px -21px rgb(0 0 0 / 75%);
+    background: #fff;
+}
+.menuUl{
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
 }
