@@ -1,8 +1,14 @@
 import './App.css';
 import Header from './components/header/header.js';
+import Content from './components/content/content.js';
+
 function App() {
   return (
-    <Header/>
+    <>
+      <Header/>
+    <Content/>
+    </>
+    
   );
 }
 

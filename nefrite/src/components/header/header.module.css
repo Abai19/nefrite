@@ -42,6 +42,13 @@ img{
     padding:12px;
     font-size: 16px;
     font-family: 'Nunito', sans-serif;
+    transition-duration: 0.4s;
+    border:2px solid #00a86b;
+}
+.btn:hover{
+    border:2px solid #00a86b;
+    background: none;
+    color:#00a86b
 }
 .shoppingCartBtn{
     color:white;
@@ -79,4 +86,71 @@ img{
     display: flex;
     justify-content: space-around;
     list-style: none;
+    flex-wrap: wrap;
 }
+nav ul{
+    list-style: none;
+    padding:2px
+}
+
+nav a {
+    text-decoration: none;
+    display: block;
+    transition: .3s linear;
+  }
+  .menuUl > li {
+    float: left;
+    position: relative;
+    
+  }
+  .menuUl > li:first-child {border-left: 0;}
+  .menuUl > li > a {  
+    padding: 5px 10px;
+    letter-spacing: 1px;
+  }
+  .menuUl > li > a.active, 
+  .submenu a:hover {color: #00a86b;}
+  .menuUl .fa, 
+  .submenu .fa {
+    margin-left: 5px;
+    color: inherit;
+  }
+  .menuUl a:hover {color: #00a86b;}
+  .submenu {
+    position: absolute;
+    z-index: 5;
+    min-width: 200px;
+    background: white;
+    border-top: 1px solid #CBCBCC;
+    border-bottom: 1px solid #CBCBCC;
+    border-left: 1px solid #CBCBCC;
+    border-right: 1px solid #CBCBCC;
+    visibility: hidden;
+    opacity: 0; 
+    transform-origin: 0% 0%;
+    transform: rotateX(-90deg);
+    transition: .3s linear;  
+  }
+  nav ul:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  .submenu li {position: relative;}
+  .submenu li a {
+    color: #282828;
+    padding: 10px 20px;
+    font-size: 13px;
+    border-bottom: 1px solid #CBCBCC;
+  }
+  .submenu .submenu {
+    position: absolute;     
+    left: 100%;
+    top: -1px;
+    transition: .3s linear;
+  }
+  nav li:hover > .submenu {
+    transform: rotateX(0deg);
+    visibility: visible;
+    opacity: 1;
+  }

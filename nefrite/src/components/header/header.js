@@ -32,16 +32,58 @@ const Header = () => {
                </div>
                <nav className={styles.menuBlock}>
                    <ul className={styles.menuUl}>
-                       <ul>
-                       <li>Категории</li>
-                       </ul>
-                       <li>Главная</li>
-                       <li>Цветы</li>
-                       <li>Новогодние</li>
-                       <li>Летние товары</li>
-                       <li>Разное</li>
-                       <li>Доставка</li>
-                       <li>Контакты</li>
+                       <li class="parent"><a> Главная</a>
+                           
+                        </li>
+                       <li><a>Цветы</a>
+                       
+                       <ul className={styles.submenu}>
+                            <li><a href="#">Декоративные </a></li>
+                            <li><a href="#">Ритуальные </a></li>
+                            <li><a href="#">Праздничные </a></li>
+                            <li><a href="#">Дерево </a></li>
+                            <li><a href="#">Листья </a></li>
+                            </ul>
+                       </li>
+                       <li><a>Новогодние</a>
+
+
+                       <ul className={styles.submenu}>
+                            <li><a href="#">Ёлки</a></li>
+                            <li><a href="#">Игрушки</a></li>
+                            <li><a href="#">Водопад </a></li>
+                            <li><a href="#">Дождик </a></li>
+                            <li><a href="#">Хвойные ветки </a></li>
+                            </ul>
+                       </li>
+                       <li><a>Летние товары</a>
+
+                       <ul className={styles.submenu}>
+                            <li><a href="#">Бассейн </a></li>
+                            <li><a href="#">Болоны</a></li>
+                            <li><a href="#">Очки</a></li>
+                            <li><a href="#">Шапки</a></li>
+                            </ul>
+                       </li>
+
+                       <li><a>Разное</a>
+
+<ul className={styles.submenu}>
+     <li><a href="#">Электро самокат</a></li>
+     <li><a href="#">Самокат</a></li>
+     <li><a href="#">Героскутер</a></li>
+
+     <li><a href="#">Мячи</a></li>
+     <li><a href="#">Ролики</a></li>
+     <li><a href="#">Скейтборд </a></li>
+     </ul>
+</li>
+                     
+                       <li><a>Доставка</a>
+                   
+                       </li>
+                       <li><a>Контакты</a>  
+                       </li>
                    </ul>
                </nav>
 
