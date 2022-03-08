@@ -1,7 +1,4 @@
 .container{
-    width: 90%;
-    margin:0 auto;
-    font-family: 'Nunito', sans-serif;
     margin-top: 20px;
 }
 .flowerWord{
@@ -30,6 +27,7 @@
 }
 .flowerText{
     text-align: center;
+    color:#2d2d2d;
 }
 .flowerMain{
     display:flex;
