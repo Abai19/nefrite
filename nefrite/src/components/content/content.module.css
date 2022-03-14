@@ -4,6 +4,9 @@
 .flowerWord{
     margin-top: 30px;
 }
+.mainImg{
+    width: 100%;
+}
 .btn{
     border: none;
     background: #00a86b;
@@ -22,15 +25,22 @@
 }
 .flowerBlock{
     border: 1px solid #dedede;
-    box-shadow: 0 20px 27px -13px rgb(0 0 0 / 75%);
+    box-shadow: 0 8px 21px -19px rgb(0 0 0 / 75%);
     background: #fff;
 }
 .flowerText{
     text-align: center;
     color:#2d2d2d;
+    font-weight: bold;
 }
 .flowerMain{
     display:flex;
     flex-wrap:wrap;
     justify-content: space-between;
 }
+.oldPrice{
+    color: #2d2d2d;
+    text-decoration: line-through;
+    opacity: 0.33;
+}
+

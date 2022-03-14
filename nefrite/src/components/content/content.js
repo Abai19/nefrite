@@ -8,7 +8,7 @@ import { faCartShopping } from "@fortawesome/free-solid-svg-icons";
 const Content = () => {
     return(
        <div className={styles.container}>
-            <img src={img}/>
+            <img src={img} className={styles.mainImg}/>
 
             <div className={styles.flowerWord}>
                 <h3> Цветы</h3>
@@ -20,7 +20,7 @@ const Content = () => {
                 <img src={flower}/>
                 <div className={styles.flowerText}>
                 <p> <b>Пионы</b></p>
-                <p> <a href="#" > 10000 тенге</a> </p>
+                <p> <span className={styles.oldPrice}>12500 тенге</span> <a href="#" > 10000 тенге</a> </p>
                 <button className={styles.btn}> <FontAwesomeIcon icon={faCartShopping} 
                         className={styles.shoppingIconFa} />  В корзину</button>
                 </div>
@@ -30,7 +30,17 @@ const Content = () => {
                 <img src={flower}/>
                 <div className={styles.flowerText}>
                 <p> <b>Пионы</b></p>
-                <p> <a href="#" > 10000 тенге</a> </p>
+                <p> <span className={styles.oldPrice}>12500 тенге</span> <a href="#" > 10000 тенге</a> </p>
+                <button className={styles.btn}> <FontAwesomeIcon icon={faCartShopping} 
+                        className={styles.shoppingIconFa} />  В корзину</button>
+                </div>
+                
+            </div>
+            <div className={styles.flowerBlock}>
+                <img src={flower}/>
+                <div className={styles.flowerText}>
+                <p>  <b>Пионы</b></p>
+                <p> <span className={styles.oldPrice}>12500 тенге</span> <a href="#" > 10000 тенге</a> </p>
                 <button className={styles.btn}> <FontAwesomeIcon icon={faCartShopping} 
                         className={styles.shoppingIconFa} />  В корзину</button>
                 </div>
@@ -40,17 +50,7 @@ const Content = () => {
                 <img src={flower}/>
                 <div className={styles.flowerText}>
                 <p> <b>Пионы</b></p>
-                <p> <a href="#" > 10000 тенге</a> </p>
-                <button className={styles.btn}> <FontAwesomeIcon icon={faCartShopping} 
-                        className={styles.shoppingIconFa} />  В корзину</button>
-                </div>
-                
-            </div>
-            <div className={styles.flowerBlock}>
-                <img src={flower}/>
-                <div className={styles.flowerText}>
-                <p> <b>Пионы</b></p>
-                <p> <a href="#" > 10000 тенге</a> </p>
+                <p> <span className={styles.oldPrice}>12500 тенге</span> <a href="#" > 10000 тенге</a> </p>
                 <button className={styles.btn}> <FontAwesomeIcon icon={faCartShopping} 
                         className={styles.shoppingIconFa} />  В корзину</button>
                 </div>
@@ -69,7 +69,7 @@ const Content = () => {
                 <img src={flower}/>
                 <div className={styles.flowerText}>
                 <p> <b>Пионы</b></p>
-                <p> <a href="#" > 10000 тенге</a> </p>
+                <p> <span className={styles.oldPrice}>12500 тенге</span> <a href="#" > 10000 тенге</a> </p>
                 <button className={styles.btn}> <FontAwesomeIcon icon={faCartShopping} 
                         className={styles.shoppingIconFa} />  В корзину</button>
                 </div>
@@ -79,7 +79,7 @@ const Content = () => {
                 <img src={flower}/>
                 <div className={styles.flowerText}>
                 <p> <b>Пионы</b></p>
-                <p> <a href="#" > 10000 тенге</a> </p>
+                <p> <span className={styles.oldPrice}>12500 тенге</span> <a href="#" > 10000 тенге</a> </p>
                 <button className={styles.btn}> <FontAwesomeIcon icon={faCartShopping} 
                         className={styles.shoppingIconFa} />  В корзину</button>
                 </div>
@@ -88,8 +88,8 @@ const Content = () => {
             <div className={styles.flowerBlock}>
                 <img src={flower}/>
                 <div className={styles.flowerText}>
-                <p> <b>Пионы</b></p>
-                <p> <a href="#" > 10000 тенге</a> </p>
+                <p>  <b>Пионы</b></p>
+                <p> <span className={styles.oldPrice}>12500 тенге</span> <a href="#" > 10000 тенге</a> </p>
                 <button className={styles.btn}> <FontAwesomeIcon icon={faCartShopping} 
                         className={styles.shoppingIconFa} />  В корзину</button>
                 </div>
@@ -98,8 +98,8 @@ const Content = () => {
             <div className={styles.flowerBlock}>
                 <img src={flower}/>
                 <div className={styles.flowerText}>
-                <p> <b>Пионы</b></p>
-                <p> <a href="#" > 10000 тенге</a> </p>
+                <p>  <b>Пионы</b></p>
+                <p> <span className={styles.oldPrice}>12500 тенге</span> <a href="#" > 10000 тенге</a> </p>
                 <button className={styles.btn}> <FontAwesomeIcon icon={faCartShopping} 
                         className={styles.shoppingIconFa} />  В корзину</button>
                 </div>
@@ -117,8 +117,8 @@ const Content = () => {
             <div className={styles.flowerBlock}>
                 <img src={flower}/>
                 <div className={styles.flowerText}>
-                <p> <b>Пионы</b></p>
-                <p> <a href="#" > 10000 тенге</a> </p>
+                <p>  <b>Пионы</b></p>
+                <p> <span className={styles.oldPrice}>12500 тенге</span> <a href="#" > 10000 тенге</a> </p>
                 <button className={styles.btn}> <FontAwesomeIcon icon={faCartShopping} 
                         className={styles.shoppingIconFa} />  В корзину</button>
                 </div>
@@ -127,8 +127,8 @@ const Content = () => {
             <div className={styles.flowerBlock}>
                 <img src={flower}/>
                 <div className={styles.flowerText}>
-                <p> <b>Пионы</b></p>
-                <p> <a href="#" > 10000 тенге</a> </p>
+                <p>  <b>Пионы</b></p>
+                <p> <span className={styles.oldPrice}>12500 тенге</span> <a href="#" > 10000 тенге</a> </p>
                 <button className={styles.btn}> <FontAwesomeIcon icon={faCartShopping} 
                         className={styles.shoppingIconFa} />  В корзину</button>
                 </div>
@@ -137,8 +137,8 @@ const Content = () => {
             <div className={styles.flowerBlock}>
                 <img src={flower}/>
                 <div className={styles.flowerText}>
-                <p> <b>Пионы</b></p>
-                <p> <a href="#" > 10000 тенге</a> </p>
+                <p>  <b>Пионы</b></p>
+                <p><span className={styles.oldPrice}>12500 тенге</span> <a href="#" > 10000 тенге</a> </p>
                 <button className={styles.btn}> <FontAwesomeIcon icon={faCartShopping} 
                         className={styles.shoppingIconFa} />  В корзину</button>
                 </div>
@@ -147,8 +147,8 @@ const Content = () => {
             <div className={styles.flowerBlock}>
                 <img src={flower}/>
                 <div className={styles.flowerText}>
-                <p> <b>Пионы</b></p>
-                <p> <a href="#" > 10000 тенге</a> </p>
+                <p>  <b>Пионы</b></p>
+                <p> <span className={styles.oldPrice}>12500 тенге</span> <a href="#" > 10000 тенге</a> </p>
                 <button className={styles.btn}> <FontAwesomeIcon icon={faCartShopping} 
                         className={styles.shoppingIconFa} />  В корзину</button>
                 </div>
