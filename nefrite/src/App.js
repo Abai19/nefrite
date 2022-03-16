@@ -5,12 +5,11 @@ import VisitInfo from './components/visitInfo/visitInfo.js';
 import Form from './components/form/form.js';
 import About from './components/about/about.js';
 import Footer from'./components/footer/footer.js';
-
 function App() {
   return (
     <>
-    <div className='container'>
     <Header/>
+    <div className='container'>
     <Content/>
     <VisitInfo/>
     <Form/>

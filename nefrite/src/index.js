@@ -3,11 +3,15 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
-import './fonts/Nunito/Nunito-Light.ttf'
+import './fonts/Nunito/Nunito-Light.ttf';
+import {BrowserRouter as Router,Routes, Route} from 'react-router-dom';
+
 ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
+  <Router>
+    <Routes>
+      <Route path='/' element={<App/>}/>
+    </Routes>
+  </Router>,
   document.getElementById('root')
 );
 
