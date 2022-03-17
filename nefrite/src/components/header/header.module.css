@@ -156,7 +156,59 @@ nav a {
     visibility: visible;
     opacity: 1;
   } */
+  .submenu {
+    display:block!important;
+    position: absolute;
+    z-index: 5;
+    min-width: 200px;
+    background: #fff;
+    visibility: hidden;
+    opacity: 0; 
+    transform-origin: 0% 0%;
+    transform: rotateX(-90deg);
+    transition: .3s linear;  
+    width: 15%!important;
+    float:left;
+    margin:0!important;
+    padding:0!important;
+    border: 1px solid #CBCBCC;
+   
+  }
+  .submenu li {position: relative;
+    background: white;
+  }
+  .submenu li a {
+    color: #282828;
 
+    font-size: 13px!important;
+  }
+  hr{
+    height: 1px;
+  }
+  .whatsIcon{
+    color:#2d2d2d;
+    font-size: 13px;
+    border-left:1px solid black;
+  }
+  .instaIcon{
+    color:#2d2d2d;
+    font-size: 13px;
+    border-left:1px solid black;
+  }
+
+  .submenu .submenu {
+    position: absolute;     
+    left: 100%;
+    top: -1px;
+    transition: .3s linear;
+  }
+  nav li:hover > .submenu {
+    transform: rotateX(0deg);
+    visibility: visible;
+    opacity: 1;
+    display:block!important;
+
+  }
   .header{
     font-family:Verdana, Geneva, Tahoma, sans-serif;
     overflow: hidden;
@@ -173,7 +225,9 @@ nav a {
     justify-content: center;
     flex-wrap: wrap;
   }
-  
+  .slider a:hover{
+    color:#00a86b;
+  }
   .slider ul li {
     margin-block: .5rem;
     margin-inline: 2rem;
@@ -201,6 +255,7 @@ nav a {
   .close {
     font-size:40px;
   }
+ 
 
 @media (max-width:900px){
   .slider{
